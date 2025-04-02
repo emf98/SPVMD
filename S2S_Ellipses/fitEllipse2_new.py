@@ -1,10 +1,7 @@
-##ADDITIONAL DEFINITION STATEMENTS FOR ELLIPSE DIAGNOSTICS
-
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #Solve for the best fit for an ellipse then plot it!
-# Generated: 7 Aug 2015 by A Lang
-# Most Recent: 25 July 2024 E Fernandez
+# Updated: 7 Aug 2015 by A Lang
 
 # Uses x.txt and y.txt produced by NCL to find lat/lon of 30000m 10-hPa or 23000m 30-hPa contour which 
 # then converts lat/lon to cartesian coords with N.Pole at origin
@@ -34,12 +31,16 @@
 #   pages = "476--480"
 #  }
 # 
+# This is a more bulletproof version than that in the paper, incorporating
+# scaling to reduce roundoff error, correction of behaviour when the input 
+# data are on a perfect hyperbola, and returns the geometric parameters
+# of the ellipse, rather than the coefficients of the quadratic form.
 
 import os
 import numpy as np
 from numpy.linalg import eig, inv
 
-##fit ellipse definition statement
+
 def fitEllipse(x,y):
     x = x[:,np.newaxis]
     y = y[:,np.newaxis]
@@ -177,26 +178,7 @@ def get_ellipse_coords(a, b, x, y, angle, k=2):
 
 ####------------------------------------------------------------------------
 ####---------- Start Code --------------------------------------------------
-#### Define functions first:
-def point_inside_polygon(x,y,xarr,yarr):
 
-	n = len(xarr)
-	inside =False
-
-	p1x = xarr[0]
-	p1y = yarr[0]
-	for i in range(n+1):
-		p2x,p2y = xarr[i % n],yarr[i % n]
-		if y > min(p1y,p2y):
-			if y <= max(p1y,p2y):
-				if x <= max(p1x,p2x):
-					if p1y != p2y:
-						xinters = (y-p1y)*(p2x-p1x)/(p2y-p1y)+p1x
-					if p1x == p2x or x <= xinters:
-						inside = not inside
-		p1x,p1y = p2x,p2y
-
-	return inside;
 
 def fitEllipseContour(x,y):
 
@@ -205,9 +187,9 @@ def fitEllipseContour(x,y):
     center = ellipse_center(a)
     phi = ellipse_angle_of_rotation(a)
     axes = ellipse_axis_length(a)
-    #print("old center = "+str(center))
-    #print("old angle of rotation = "+str(phi*180/np.pi))
-    #print("old axes = "+ str(axes))
+    print("old center = "+str(center))
+    print("old angle of rotation = "+str(phi*180/np.pi))
+    print("old axes = "+ str(axes))
     
     #uses new way to get ellipse metrics
     edata = get_ellipse_metrics( a )
@@ -216,14 +198,14 @@ def fitEllipseContour(x,y):
     axes = np.array([edata[2],edata[3]])
     
     phideg = -phi * 180.0/np.pi
-    #print("center = "+str( center))
-    #print("angle of rotation = "+str(phi*180/np.pi))
-    #print("axes = "+str(axes))
+    print("center = "+str( center))
+    print("angle of rotation = "+str(phi*180/np.pi))
+    print("axes = "+str(axes))
     
     a, b = axes
 
     axes_center_phi = str(a)+" "+str(b)+" "+str(center[0])+" "+str(center[1])+" "+str(phi)
-    #print(axes_center_phi)
+    print(axes_center_phi)
     pts = get_ellipse_coords(a,b,center[0],center[1],phideg,2)
     circ = get_ellipse_coords(.5,.5,0,0,0,2)   # plot a circle equivalent to the 45N circle
     
@@ -249,5 +231,3 @@ def fitEllipseContour(x,y):
     #plot(circ[:,0],circ[:,1],'green')  # plot a circle equivalent to the 45N circle
     #plot(0,0,'g+',markersize=25) #plot the north poles
     #show()
-
-
