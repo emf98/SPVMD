@@ -15,6 +15,8 @@ This code can be used at most pressure levels and can contour other features of 
 Please check these codes when using them to update the locations of your saved ERA-5 or ERA-I files. 
 Additionally, the plotting portion of the code may return issues when attempting to look at other areas globally if you do not modify the cartopy distinctions. 
 
+-> 'EllipseDef_SaveExample.ipynb' provides an example for calculating the ellipse metrics. 
+
 -> 'Fernandez_etal25' folder contains code used for calculating the diagnostics and associated images from the manuscript.
 
 -> 'S2S_Ellipses' folder contains files relevant to calculating these diagnostics with S2S datasets. There is a separate README in this folder. 
