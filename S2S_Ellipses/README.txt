@@ -4,4 +4,4 @@ In this folder:
 
 -> 'fitEllipse2_new.py' contains function statements used in calculating the reforecast ellipses. 
 
--> 'S2SEllipse_Test.ipynb' provides an example calcualtion of reforecast ellipses. 
+-> 'S2SEllipse_Test.ipynb' provides an example calculation of reforecast ellipses. 
