@@ -17,7 +17,7 @@ Additionally, the plotting portion of the code may return issues when attempting
 
 -> 'EllipseDef_SaveExample.ipynb' provides an example for calculating the ellipse metrics. 
 
--> 'Fernandez_etal25' folder contains code used for calculating the diagnostics and associated images from the manuscript.
+-> 'Fernandez_etal25' folder contains code used for calculating the diagnostics and some of the associated images from the manuscript.
 
 -> 'S2S_Ellipses' folder contains files relevant to calculating these diagnostics with S2S datasets. There is a separate README in this folder. 
 
