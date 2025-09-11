@@ -4,6 +4,8 @@
 
 This repository supports a manuscript submitted to the AMS Journal of Applied Meteorology and Climatology by Fernandez, Lang, and Attard 2025 (*under review*). 
 
+Required Python packages include `numpy`, `datetime`, and 
+
 ## Contents
 
 * `fitEllipse3_new.py` contains code for mathematical definition statements related to the full geometric calculation of the ellipse metrics.
@@ -27,6 +29,7 @@ Additionally, the code uses an older version (Python 3) of cartopy for plotting 
 ## Citation
 
 If you use the Python scripts in this repository, please cite:
-Fernandez, E.M., A.L. Lang, and H.E. Attard (2025): “Stratospheric Polar Vortex Ellipse Diagnostics for Realtime and S2S Forecast Analyses.” *Submitted for Peer Review to the Journal of Applied Meteorology and Climatology*, May 2025. 
+
+Fernandez, E.M., A.L. Lang, and H.E. Attard (2025): “Stratospheric Polar Vortex Ellipse Diagnostics for Realtime and S2S Forecast Analyses.” *Submitted for Peer Review to the Journal of Applied Meteorology and Climatology*. 
 
 Any questions regarding the code files may be directed to Elena Fernandez (emfernandez@albany.edu/elenamf98@gmail.com). 
