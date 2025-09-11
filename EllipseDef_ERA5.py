@@ -1,8 +1,5 @@
 ## DEFINITION FILE FOR ERA-5 DATASET
-
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-#Solve for the best fit for an ellipse then plot it!
+#Solve for the best fit for an ellipse.. then plot it!
 # Generated: 26 July 2024 E Fernandez
 
 ##This is a continuation off the fitEllipse3_new.py python file wherein the actual ellipse calculation definitions are included here. 
