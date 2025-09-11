@@ -73,8 +73,6 @@ import pickle
 #m = target month
 #t_d = total days in target month
 
-## Between both definition statements, the INPUTS may change, and the empty lists for the variables must be noted ahead of time. 
-
 def ERA5_one_ellipse_calc(file_location,plot_lev,the_contour,windlat,y,m,t_d):
     
     #Start with defining the desired period of record
