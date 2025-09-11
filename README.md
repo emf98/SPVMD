@@ -4,7 +4,7 @@
 
 This repository supports a manuscript submitted to the AMS Journal of Applied Meteorology and Climatology by Fernandez, Lang, and Attard 2025 (*under review*). 
 
-Required Python packages include `numpy`, `datetime`, and 
+Required Python packages include `numpy`, `datetime`, and `xarray`.
 
 ## Contents
 
