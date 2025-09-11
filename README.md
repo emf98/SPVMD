@@ -2,7 +2,7 @@
 
 **SPVDM** is a repository containing code for the best-fit calculation of stratospheric polar vortex ellipse geometries/metrics. This method provides complementary metrics for determining stratospheric polar vortex strength and SSW variability to those established in [*Seviour et al. 2013*](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/grl.50927).
 
-This repository supports a manuscript submitted to the AMS Journal of Applied Meteorology and Climatology by Fern&aacutendez, Lang and Attard 2025 (*under review*). 
+This repository supports a manuscript submitted to the AMS Journal of Applied Meteorology and Climatology by Fernandez, Lang, and Attard 2025 (*under review*). 
 
 ## Contents
 
@@ -29,4 +29,4 @@ Additionally, the code uses an older version (Python 3) of cartopy for plotting 
 If you use the Python scripts in this repository, please cite:
 Fernandez, E.M., A.L. Lang, and H.E. Attard (2025): “Stratospheric Polar Vortex Ellipse Diagnostics for Realtime and S2S Forecast Analyses.” *Submitted for Peer Review to the Journal of Applied Meteorology and Climatology*, May 2025. 
 
-Any questions regarding the code files may be directed to Elena Fern&aacutendez (emfernandez@albany.edu/elenamf98@gmail.com). 
+Any questions regarding the code files may be directed to Elena Fernandez (emfernandez@albany.edu/elenamf98@gmail.com). 
