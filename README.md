@@ -23,7 +23,7 @@ Additionally, the code uses an older version (Python 3) of cartopy for plotting 
 
 * `EllipseDef_SaveExample.ipynb` provides an example for calculating the ellipse metrics for a single month/year. A single instance of this code should not exceed five minutes. 
 
-* `S2S_Ellipses` contains files relevant to calculating these diagnostics with S2S datasets. There is a separate README in this folder. 
+* `S2S_Ellipses` contains files relevant to calculating these diagnostics with S2S datasets. There is a separate README in this folder explaining this analysis. 
 
 
 ## Citation
