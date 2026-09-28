@@ -25,6 +25,8 @@ Additionally, the code uses an older version (Python 3) of cartopy for plotting 
 
 * `S2S_Ellipses` contains files relevant to calculating these diagnostics with S2S datasets. There is a separate README in this folder explaining this analysis. 
 
+### NOTE TO USERS:
+Please use NumPy versions earlier than 2.0, if possible. Users have reported that functions using numpy.arctan2 are dysfunctional in newer versions of NumPy. 
 
 ## Citation
 
